@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: linear-gradient(320deg,#f27121,#e94057,#8a2387);
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.titleArea{
+    width: 30rem;
+    height: 5.2rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    position: absolute;
+    top: 4.2rem;
+}
+
+.boxArea{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    padding: 4rem;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+}
+.textArea{
+    font-size: 1.5rem;
+}
+
+
+
+
+.buttonArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background: hsla(0,0%,100%,.2);
+    border: 2px solid hsla(0,0%,100%,.1);
+    border-radius: 10px;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: background-color .15s ease, scale .15s ease-in-out;
+    font-weight: 400;
+    font-family: "Inter",sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+}
+
+button:hover{
+    scale: 1.02;
+}
+
+button::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    background-color: hsla(0, 0%, 100%, 0.196);
+    opacity: 0;
+    border-radius: 0.67rem;
+}
+
+button:active::after{
+    animation-name: fillOut;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fillOut{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.glass{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.item1{
+    position: absolute;
+    width: 5rem;
+    height: 7rem;
+    top: 20%;
+    left: 90%;
+    transform: rotate(0.441075turn);
+    opacity: 0.422888;
+}
+.item2{
+    position: absolute;
+    width: 13rem;
+    height: 6rem;
+    top: 20%;
+    left: 67%;
+    transform: rotate(0.841075turn);
+    opacity: 0.422888;
+}
+
+.item3{
+    position: absolute;
+    width: 15rem;
+    height: 10rem;
+    top: 70%;
+    left: 70%;
+    transform: rotate(0.141075turn);
+    opacity: 0.422888;
+}
+.item4{
+    position: absolute;
+    width: 10rem;
+    height: 7rem;
+    top: 5%;
+    left:85%;
+    transform: rotate(2.441075turn);
+    opacity: 0.222888;
+}
+
+.item5{
+    position: absolute;
+    width: 10rem;
+    height: 17rem;
+    top: 14%;
+    left:85%;
+    transform: rotate(-0.441075turn);
+    opacity: 0.322888;
+}
+
+.item6{
+    position: absolute;
+    width: 10rem;
+    height: 7rem;
+    top: 54%;
+    left:15%;
+    transform: rotate(-0.441075turn);
+    opacity: 0.272888;
+}
+
+.item6{
+    position: absolute;
+    width: 10rem;
+    height: 7rem;
+    top: 54%;
+    left:15%;
+    transform: rotate(-0.441075turn);
+    opacity: 0.422888;
+}
+.item7{
+    position: absolute;
+    width: 14rem;
+    height: 21rem;
+    top: 54%;
+    left:15%;
+    transform: rotate(-0.441075turn);
+    opacity: 0.222888;
+}
+.item8{
+    position: absolute;
+    width: 6rem;
+    height: 11rem;
+    top: 4%;
+    left:15%;
+    transform: rotate(-0.441075turn);
+    opacity: 0.222888;
+}
+.item9{
+    position: absolute;
+    width: 6rem;
+    height: 11rem;
+    top: 3%;
+    left:4%;
+    transform: rotate(0.3221075turn);
+    opacity: 0.222888;
+}
